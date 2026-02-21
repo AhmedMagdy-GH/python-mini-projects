@@ -11,8 +11,10 @@ correct_letters=[]
 
 display=""
 
-lives=5
+lives=6
+
 place_holder=""
+
 print(chosen_word)
 
 while not game_over:
@@ -21,7 +23,7 @@ while not game_over:
         place_holder+="-"
     print("Word to guess: "+place_holder)
 
-    print(f"********************************{lives}/5 LIVES LEFT********************************")
+    print(f"********************************{lives}/6 LIVES LEFT********************************")
 
     display = ""
     guess=input("choose a letter:").lower()
@@ -49,5 +51,6 @@ while not game_over:
         lives-=1
         print(f"You guessed {guess}, that's not in the word, you lose a life.")
         if lives == 0:
+            print(hangman_arts.stages[lives])
             print(f"********************************IT WAS {chosen_word}! YOU LOSE********************************")
             game_over = True
