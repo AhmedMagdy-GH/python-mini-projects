@@ -25,6 +25,7 @@ coffee_maker= CoffeeMaker()
 #     coffee_maker.make_coffee(order_info)
 
 
+#Better way to workflow
 is_on = True
 while is_on:
     options = menu.get_items()
