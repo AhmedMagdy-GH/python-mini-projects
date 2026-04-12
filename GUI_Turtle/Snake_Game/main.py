@@ -1,7 +1,7 @@
 from snake import Snake
 from turtle import Screen
 from food import Food
-from score_board import ScoreBoard
+from scoreboard import ScoreBoard
 import time
 
 screen = Screen()
@@ -30,6 +30,7 @@ while game_is_on:
     if snake.head.distance(food) < 15:
         food.refresh()
         snake.extend()
+
         scoreboard.increase_score()
 
     # Detect collision with wall.
