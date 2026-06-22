@@ -36,8 +36,8 @@ def play_game ():
     print(art.logo)
     user_cards= []
     computer_cards=[]
-    computer_score=-1
-    user_score=-1
+    computer_score= -1
+    user_score= -1
     is_game_over = False
 
     for _ in range(2):

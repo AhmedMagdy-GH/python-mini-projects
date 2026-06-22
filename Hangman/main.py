@@ -17,11 +17,11 @@ place_holder=""
 
 print(chosen_word)
 
-while not game_over:
+for letter in chosen_word:
+    place_holder+="-"
+print("Word to guess: "+place_holder)
 
-    for letter in chosen_word:
-        place_holder+="-"
-    print("Word to guess: "+place_holder)
+while not game_over:
 
     print(f"********************************{lives}/6 LIVES LEFT********************************")
 
